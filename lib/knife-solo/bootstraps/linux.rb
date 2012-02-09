@@ -41,10 +41,10 @@ module KnifeSolo::Bootstraps
     end
 
     def yum_install
-      ui.msg("Installing required packages...")
-      add_yum_repos
-      @packages = %w(rubygem-chef rsync)
-      run_command("sudo yum -y install #{package_list}")
+      # ui.msg("Installing required packages...")
+      # add_yum_repos
+      # @packages = %w(rubygem-chef rsync)
+      # run_command("sudo yum -y install #{package_list}")
     end
 
     def debian_gem_install
